@@ -15,9 +15,6 @@ Installation
     # run local webserver
     bundle exec jekyll --server
 
-You have to recompile assets and restart the server as you make changes.
-
-    bundle exec jekyll && bundle exec jekyll --server
 
 Deployment
 ==========
@@ -25,8 +22,15 @@ Deployment
 Anytime you push to master, Github will compile and deploy
 your assets to http://jackpine.github.com
 
-TODO
-====
 
-set up watch file to recompile assets and restart server whenever any
-files change.
+Development
+===========
+You have to recompile assets and restart the server as you make changes.
+
+You can do this manually
+
+    bundle exec jekyll && bundle exec jekyll --server
+
+Or - you can use guard to recompile assets whenever any files change.
+
+    bundle exec guard
