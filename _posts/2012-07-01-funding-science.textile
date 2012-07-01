@@ -1,0 +1,48 @@
+---
+  layout: default
+---
+
+h1. Funding science, etc.
+
+I'm trying to understand the funding structure of science better.
+
+I'm sure funding drives a lot of what scientists do day-to-day.
+
+How do you get funding the first time?
+
+How do you use that funding in such a way as to promote getting repeated
+funding?
+
+Is your audience _strictly_ the folks that gave you funding?  Put
+another way, how much is it acceptable to build an audience outside of
+those that gave you funding.
+
+This is particularly applicable to self-publishing on the web, outside
+of any existing journal. You could target anyone in the greater
+public.
+
+However, presumably your grant has specific goals in it, and it might
+not be in line with your bottom line to spend time/money on making your
+research easier for the general public to consume
+
+I imagine that funding is one really big source of anxiety and effort
+for folks trying to do science.
+
+How do you optimize your spending to meet those that gave you funding,
+reach those that might give you funding in the future, while all the
+while trying to reach the general public.
+
+I'm so interested in this because any force that has the power to
+sustain your endeavors (read: you can't function without some level of
+funding), is going to exhert pressure on your working relationships.
+Sometimes that pressure isn't addressed directly or expediently. If you
+are paying an analyst or a programmer to help you with some grant funded
+project, their efforts will undoubtedly be less directed then yours.
+It's your project after all.
+
+That's why, when collaborating with scientists, it is essential to have
+some level of understanding of where and why the money that ultimately
+funds the project is coming from.
+
+There are primarily two types of funding in the non-profit and academic
+world: one time grant funding, and structural repeating income.
