@@ -2,47 +2,43 @@
   layout: default
 ---
 
-h1. Funding science, etc.
+h1. Understanding how science is funded
 
-I'm trying to understand the funding structure of science better.
+Scientists spend a lot of time working on getting funding - it's how scientific work is vetted by the market. It's a source of effort and anxiety for all research teams. Since I'm trying to help scientists via technology, I'm trying to better understand how science gets funded.  
 
-I'm sure funding drives a lot of what scientists do day-to-day.
+h2. Some immediate questions I had:
+* How do you get funding the first time?
+* How do you use funding in such a way as to promote getting repeated funding?
+** To get the same grant again later?
+** To increase your prestige and get new grants?
+* Is your audience _strictly_ the folks that gave you funding?  Put another way, how much is it acceptable to build an audience outside of those that gave you funding.
+* How do you optimize your resources to satisfy those that gave you funding, reach those that might give you funding in the future, while also trying to reach the general public or a community of peers? 
 
-How do you get funding the first time?
+h2. The web as a space for innovation
 
-How do you use that funding in such a way as to promote getting repeated
-funding?
+Traditional research is presented for the instituion that funds it. Usually that means you hope to be published in some well established expert journals. However, for people self-publishing on the web, you can target any group in the greater public. But, presumably your grant has specific goals in it, and it might not be best for your future research to spend too much (any?) time/money on making your research easier for the general public to consume. 
 
-Is your audience _strictly_ the folks that gave you funding?  Put
-another way, how much is it acceptable to build an audience outside of
-those that gave you funding.
 
-This is particularly applicable to self-publishing on the web, outside
-of any existing journal. You could target anyone in the greater
-public.
+I'm interested in this for purely pragmatic reasons. As a technical mentor of scientists, it's at the undercurrent of many interactions. Any force that has the power to sustain your endeavors (read: you can't function without some level of funding), is going to exhert pressure on your working relationships. That pressure often isn't addressed directly or expediently. For example, if you are paying an analyst or a programmer to help you with some grant funded project, their efforts will undoubtedly be less directed then yours at achieving the goals of that grant.  It's your project after all, and you can't expect others to care at the same level. 
 
-However, presumably your grant has specific goals in it, and it might
-not be in line with your bottom line to spend time/money on making your
-research easier for the general public to consume
+That's why, when collaborating with scientists, it is essential that I have some level of understanding of where and why the money that funds the project is coming from.
 
-I imagine that funding is one really big source of anxiety and effort
-for folks trying to do science.
+There are primarily two types of funding in the non-profit and academic world: one time grant funding, and structural repeating income.
 
-How do you optimize your spending to meet those that gave you funding,
-reach those that might give you funding in the future, while all the
-while trying to reach the general public.
+h2. One time grants
 
-I'm so interested in this because any force that has the power to
-sustain your endeavors (read: you can't function without some level of
-funding), is going to exhert pressure on your working relationships.
-Sometimes that pressure isn't addressed directly or expediently. If you
-are paying an analyst or a programmer to help you with some grant funded
-project, their efforts will undoubtedly be less directed then yours.
-It's your project after all.
+Government grants come from some long standing institutions like "NSF":https://www.nsf.gov/funding/ and "NIH":http://grants.nih.gov/grants/oer.htm 
 
-That's why, when collaborating with scientists, it is essential to have
-some level of understanding of where and why the money that ultimately
-funds the project is coming from.
+This isn't an article about how to get funding. It's an article to help understand how where you get your money affects your working relationships.
 
-There are primarily two types of funding in the non-profit and academic
-world: one time grant funding, and structural repeating income.
+Proposals for a grant are scored and ranked ranked against similar proposals for the same funding. There is a very real competition for a finite chunk of change. 
+
+Once our team has been awarded a grant, we're collaborating to ensure that we do plenty to satisfy the folks who issued the original grant, while simultaneously investing as much as possible into positioning for future grants.
+
+h2. Repeating income
+
+If your research fills some recurring need, you can get a regular chunk of money. This work may be a great candidate for automation. Of course, it depends on the characteristics of the grant, but if the work you're doing is mechanical, do what little work you can to do the most tedious parts for you. _Remember_ you needn't automate the whole thing - you've been doing without so far. Just focus on the part that most keeps you from doing other good science.
+
+h2. Finance is a tool
+
+Ultimately, finance is only interesting in as much as it can be used to accomplish real things. If funding is something you spend all your time on, you're a financier, not a scientist. My goal is to get enough information on how finance works in scientific communities, so that I can deliver on the goals of previously obtained funding, and so that I can take advantage of available funding to achieve our mission as a scientific collective. 
