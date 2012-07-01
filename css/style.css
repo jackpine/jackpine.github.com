@@ -1,6 +1,7 @@
 body {
   background-image: url('/img/graph_paper_tile.png');
   font-family: Helvetica, Arial;
+  font-size: 16px;
   padding: 10px;
 }
 
@@ -12,5 +13,11 @@ div[role="main"] {
   margin-right: auto;
   min-height: 500px;
   box-shadow: 0 0 30px #888;
+}
+
+.text-column {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
