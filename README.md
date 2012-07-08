@@ -27,10 +27,11 @@ Development
 ===========
 You have to recompile assets and restart the server as you make changes.
 
-You can do this manually
-
-    bundle exec jekyll && bundle exec jekyll --server
-
-Or - you can use guard to recompile assets whenever any files change.
-
+    # use guard to recompile assets automagically when files change.
+    bundle exec jekyll --server &
     bundle exec guard
+
+    # or you can manually recompile and bounce the server every time you make a change
+    bundle exec jekyll && bundle exec jekyll --server
+    
+    
