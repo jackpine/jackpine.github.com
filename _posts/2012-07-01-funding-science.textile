@@ -13,6 +13,30 @@ h2. Some immediate questions I had:
 ** To increase your prestige and get new grants?
 * Is your audience _strictly_ the folks that gave you funding?  Put another way, how much is it acceptable to build an audience outside of those that gave you funding.
 * How do you optimize your resources to satisfy those that gave you funding, reach those that might give you funding in the future, while also trying to reach the general public or a community of peers? 
+ 
+
+What do you use funding for? Roughly, what's your breakdown?
+Salary?
+Consumable Supplies? (one-time cost)
+On going expenses: what kind? How much?
+* Are scientists especially averse to recurring charges? (salary, services, hosting) vs one time costs (buying a permanent license, buying machines to _do_ the hosting).
+  Because funding is rocky, you (universities especially) don't want to have to fire people - joseph
+  Solutions for rouning out funding to allow scientists to be comfortable paying for ongoing technical services (hosting, monitoring, etc. - which lead to cheaper, more effective, long-term technical infrastructure (Including a technical team))
+  Top notch technical professionals won't settle for having to do things in an suboptimal way.
+  Ultimately, I'll pay for it myself, but resent the client a little for not being realistic.
+ 
+
+personal risk? Science putting out personal credit to do preliminary work to get a grant?
+
+Alternatives to grant funded science?
+
+Funding pools w/ other groups to share expense of a large sunk cost, but sharable resource? (e.g. large data set, or computing infrastructure). Do you then open it? Or keep it between the collective?
+
+Do you monetize your endeavors? License software? License results?
+
+What sort of technical tools do _you_ think are lacking? 
+
+What sort of technical tools do you already use?
 
 h2. The web as a space for innovation
 
