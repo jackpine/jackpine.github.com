@@ -1,0 +1,32 @@
+---
+  layout: default
+  title: jackpine
+---
+
+h1. Our goal is to bring Science to the Web.
+
+*We are a pair of software engineers who publish science on the web.*
+
+Our work is to provide a connection between a scientific determination, realized as data and logical processes, and the historical, emperical means to express them. 
+
+We build online reports and dynamic visualizations from scientific data. 
+
+h3. Why?
+
+*  Generate citations from your research.
+*  Encourage collaboration with peers.
+*  Reach out to policy makers.
+*  Advocate for funders
+*  Discover prospective students 
+*  Relate scientific discoveries to the public
+
+
+h2. Living Web / Living Science
+
+The internet today is in motion. The web is composed of technologies and companies that represent competing regions of technological capital.
+
+In some cases the compitition is motivated by financial interests, in others by better technologies. Your research should leverage these pools of technological capital. It needs to express the standards and capabilities of a modern web. We can give your research a new political and economic language.
+
+Science is in motion. Ultimately, this is about joining the efforts of scientific research with the collaborative tools and technologies of the web.
+
+

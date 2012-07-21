@@ -14,13 +14,15 @@ header {
   height: 100px;
 }
 
-header h1 {
+header name {
+  display: block;
   font-size: 50px;
+  font-weight: bold;
   padding-top: 18px;
   margin: 0 58px -8px 0;
 }
 
-header h1 a, header h1 a:visited {
+header name a, header name a:visited {
   color: black;
   text-decoration: none;
 }
@@ -38,13 +40,19 @@ header p {
   margin-right: 42px;
 }
 
+footer {
+  text-align: right;
+}
 
-div#wrapper {
-  padding: 20px;
-  background: #eee;
+div#wrapper, footer {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
+}
+
+div#wrapper {
+  background: #eee;
   min-height: 500px;
   box-shadow: 0 0 30px #888;
 }
@@ -56,3 +64,7 @@ div[role=main] {
   padding-bottom: 50px;
 }
 
+/* front page */
+#jackpine h1 {
+  font-size: 30px;
+}
