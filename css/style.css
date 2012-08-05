@@ -22,9 +22,18 @@ header name {
   margin: 0 58px -8px 0;
 }
 
-header name a, header name a:visited {
+header a, header a:visited {
   color: black;
   text-decoration: none;
+}
+
+footer a, footer a:visited {
+  color: black;
+}
+
+footer .contact {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 a {
@@ -41,6 +50,7 @@ header p {
 }
 
 footer {
+  margin-top: 10px;
   text-align: right;
 }
 
@@ -48,17 +58,17 @@ div#wrapper, footer {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
 }
 
 div#wrapper {
+  padding: 20px;
   background: #eee;
   min-height: 500px;
   box-shadow: 0 0 30px #888;
 }
 
 div[role=main] {
-  width: 600px;
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px;
@@ -66,5 +76,16 @@ div[role=main] {
 
 /* front page */
 #jackpine h1 {
-  font-size: 30px;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+#who-we-are {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+a[name="contact"] {
+  font-size: 24px;
+  font-weight: bold;
 }

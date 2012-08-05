@@ -5,20 +5,18 @@
 
 h1. Our goal is to bring Science to the Web.
 
-*We are a pair of software engineers who publish science on the web.*
+p(#who-we-are). We are a pair of software engineers who publish science on the web.
 
-Our work is to provide a connection between a scientific determination, realized as data and logical processes, and the historical, emperical means to express them. 
+We build online reports and dynamic visualizations from scientific data.
 
-We build online reports and dynamic visualizations from scientific data. 
-
-h3. Why?
+h3. What can we do for you?
 
 *  Generate citations from your research.
 *  Encourage collaboration with peers.
 *  Reach out to policy makers.
-*  Advocate for funders
-*  Discover prospective students 
-*  Relate scientific discoveries to the public
+*  Advocate for funders.
+*  Discover prospective students.
+*  Relate scientific discoveries to the public.
 
 
 h2. Living Web / Living Science
