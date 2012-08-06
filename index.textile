@@ -9,19 +9,7 @@ p(#who-we-are). We are software engineers who publish science.
 
 h2. What can we do for you?
 
-We specialize in "research facilitiation":#research-facilitation, "authoring/publishing":#authoring-publishing, and "public engagment":#engagement. <a href="mailto:info@jackpine.me">Contact us</a> to see how we can work together.
-
-h3(#research-facilitation). research facilitation
-* produce data collection interfaces for the web and mobile devices to take into the field.
-* assemble automated data processing to save time and reduce errors.
-
-h3(#authoring-publishing). authoring / publishing
-* create interactive visualizations pull people into your research.
-
-h3(#engagement). engagement
-* define and build your audiences social and search channels.
-* set verifiable goals and objectively measure your impact.
-
+We specialize in research facilitiation, authoring/publishing, and public engagment. <a href="mailto:info@jackpine.me">Contact us</a> to see how we can work together.
 
 h2. Living Web, Living Science
 
