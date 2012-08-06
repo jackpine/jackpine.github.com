@@ -3,27 +3,29 @@
   title: jackpine
 ---
 
-h1. Our goal is to bring Science to the Web.
+h1. Our goal is to bring Science to the Web
 
-p(#who-we-are). We are a pair of software engineers who publish science on the web.
+p(#who-we-are). We are software engineers who publish science.
 
-We build online reports and dynamic visualizations from scientific data.
+h2. What can we do for you?
 
-h3. What can we do for you?
+We specialize in "research facilitiation":#research-facilitation, "authoring/publishing":#authoring-publishing, and "public engagment":#engagement. <a href="mailto:info@jackpine.me">Contact us</a> to see how we can work together.
 
-*  Generate citations from your research.
-*  Encourage collaboration with peers.
-*  Reach out to policy makers.
-*  Advocate for funders.
-*  Discover prospective students.
-*  Relate scientific discoveries to the public.
+h3(#research-facilitation). research facilitation
+* produce data collection interfaces for the web and mobile devices to take into the field.
+* assemble automated data processing to save time and reduce errors.
+
+h3(#authoring-publishing). authoring / publishing
+* create interactive visualizations pull people into your research.
+
+h3(#engagement). engagement
+* define and build your audiences social and search channels.
+* set verifiable goals and objectively measure your impact.
 
 
-h2. Living Web / Living Science
+h2. Living Web, Living Science
 
-The internet today is in motion. The web is composed of technologies and companies that represent competing regions of technological capital.
-
-In some cases the compitition is motivated by financial interests, in others by better technologies. Your research should leverage these pools of technological capital. It needs to express the standards and capabilities of a modern web. We can give your research a new political and economic language.
+The internet today is in motion. The web is composed of technologies and companies that represent competing regions of technological capital. Your research should leverage these pools of technological capital. It needs to express the standards and capabilities of a modern web. We can give your research a new political and economic language.
 
 Science is in motion. Ultimately, this is about joining the efforts of scientific research with the collaborative tools and technologies of the web.
 
