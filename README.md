@@ -6,14 +6,13 @@ Installation
     cd jackpine.github.com
 
     # install necessary libraries
-    gem install bundler
     bundle
 
     # compile assets
     bundle exec jekyll 
     
     # run local webserver
-    bundle exec jekyll --server
+    bundle exec jekyll serve
 
 
 Deployment
@@ -27,9 +26,9 @@ Development
 ===========
 You have to recompile assets and restart the server as you make changes.
 
-You can do this manually
+You can do this manually by restarting the server
 
-    bundle exec jekyll && bundle exec jekyll --server
+    bundle exec jekyll serve
 
 Or - you can use guard to recompile assets whenever any files change.
 
