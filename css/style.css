@@ -1,30 +1,50 @@
 body {
-  background-image: url('/img/graph_paper_tile.png');
   font-family: Helvetica, Arial;
   font-size: 16px;
-  padding: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2{
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
-  background-image: url(/img/tree_logo.png);
-  background-repeat: no-repeat;
-  background-position: right top;
   text-align: right;
   margin-right: 10px;
   height: 100px;
 }
 
 header name {
-  display: block;
-  font-size: 50px;
+  font-size: 25px;
   font-weight: bold;
-  padding-top: 18px;
-  margin: 0 58px -8px 0;
+  margin: 0 5px 0px 0;
+  line-height: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
+
+header #jackpine-avatar{
+  float:right;
+}
+
+#jackpine-avatar{
+  background-image: url(/img/pine_cone.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 34px;
+  width: 44px;
+  margin-top:13px;
+} 
 
 header a, header a:visited {
   color: black;
   text-decoration: none;
+}
+
+footer {
+  margin-top: 10px;
+  text-align: right;
+  background-color: #f1c40f;
+  padding: 10px;
 }
 
 footer a, footer a:visited {
@@ -35,6 +55,10 @@ footer .contact {
   margin-left: 5px;
   margin-right: 5px;
 }
+.footer.stacker{
+  margin-top: 25px;
+  background-color: #f1eacb;
+}
 
 a {
   color: #888;
@@ -44,27 +68,13 @@ a:visited, a:hover {
   color: #333;
 }
 
-header p {
-  margin: 0;
-  margin-right: 42px;
-}
-
-footer {
-  margin-top: 10px;
-  text-align: right;
-}
-
 div#wrapper, footer {
-  width: 900px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-div#wrapper {
-  padding: 20px;
-  background: #eee;
-  min-height: 500px;
-  box-shadow: 0 0 30px #888;
+div.stacker{
+  background-color:white;
+}
+.container{
 }
 
 div[role=main] {
@@ -74,10 +84,26 @@ div[role=main] {
   padding-bottom: 50px;
 }
 
+.flat-gray{
+  background-color: #f2f2f2;
+}
+.asbestos-gray{
+  background-color: #7f8c8d;
+}
+
 /* front page */
-#jackpine h1 {
-  font-size: 25px;
-  margin-bottom: 0;
+#jackpine #hero{
+  background-color: #a8bd6f;
+  height: 200px;
+}
+
+#jackpine #about{
+  height: 175px;
+}
+
+#jackpine h1{
+  color: white;
+  text-align:center;
 }
 
 #who-we-are {
