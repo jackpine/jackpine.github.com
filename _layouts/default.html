@@ -10,34 +10,33 @@
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="/js/libs/modernizr-2.7.1.min.js"></script>
 </head>
 <body id="{{ page.title }}">
-  <div id="wrapper">
-    <header>
+    <header class="container">
       <name><a href="/">Jackpine</a></name>
-      <p>
-        technical mentoring for scientists.
-      </p>
+      <div id="jackpine-avatar">
+      </div>
     </header>
-    <div role="main">
+  <div id="wrapper">
       {{ content }}
-    </div>
   </div>
-  <footer>
-    <a name="contact">→</a>
-    We are human, contact us:
-    <span class="contact">
-      <a href="mailto:info@jackpine.me?subject=jackpine%20info">info@jackpine.me</a> | 
-      <a href="tel:+15707959038">1.570.795.9038</a> |
-      <a href="http://twitter.com/jackpinescience">@jackpinescience</a>
-    </span> 
-  </footer>
+  <div class="stacker footer">
+    <footer class="container">
+      <a name="contact">→</a>
+      We are human, contact us:
+      <span class="contact">
+        <a href="mailto:info@jackpine.me?subject=jackpine%20info">info@jackpine.me</a> | 
+        <a href="tel:+15707959038">1.570.795.9038</a> |
+        <a href="http://twitter.com/jackpinescience">@jackpinescience</a>
+      </span> 
+    </footer>
+  </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="/js/libs/jquery-1.10.2.min.js"></script>
 
   <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
