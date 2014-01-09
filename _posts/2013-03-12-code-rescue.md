@@ -1,45 +1,7 @@
 ---
 layout: post
-title: Test Driven Code Rescue
+title: Test Driven Code Rescue  (day 1)
 ---
-
-Day 1
------
-
-Run the test, sweet =\
-
-202 of 302 tests failing
-
-The lead developer explained to me how the pace of development had been so
-fast, and requirements so fast-changing that there simply hadn't been time to
-keep up with the test suite. He assured me that "once things settled down" we'd
-come back and fix the test suite.
-
-I agreed that stopping all development to fix all the broken tests
-wouldn't have been a good way to impress my new clients on day 1 of my
-new gig. And to be honest, it wouldn't be good for the project, which
-had an immenent *real world* deadline. My solution? Spend 20 minutes to manually
-add this to each broken spec:
-
-    pending "pended as part of the great spec revamp of Feb 12."
-
-I know, I know - I just gave up on all those tests. But, a test suite doesn't
-do any good when you can't tell what's broken. We needed a clean slate. This
-allowed us to start writing new tests as we develop features and fix bugs,
-while making sure we don't break any of the ~50 tests that were passing. It
-established the agreement that we were going to start using tests.
-
-At least, in my mind it did. I will say that over the following weeks getting
-people to actually run the tests, let alone write any, was an ongoing struggle.
-More than once I got an early morning call about something as basic as "people
-can't sign up". Lo and behold, run the test suite against the currently
-deployed branch and it failed. A wiser me would have invested in a CI solution
-then and there, but, to my credit, I already felt like I was ruffling feathers
-with the amount of time I was spending "not doing development."
-
-
-Test Driven Code Rescue
-=======================
 
 "Code Rescue" describes a situation in which a project has gone so far
 off track, that just pulling in some overtime or "trying harder" are
@@ -80,51 +42,68 @@ leader.
 
 "Oh. Right." he said. "We've just been moving so fast trying to meet
 this deadline that we haven't had the time to keep the test suite
-up-to-date." He assured me, "Once things settle down, we'll ahve time to
+up-to-date." He assured me, "Once things settle down, we'll have time to
 go back and fix everythign up."
 
-I was a bit speechless. I've worked on plenty of projects where there
-were no tests, or not very many tests, or really slow tests, or tests
-that sometimes fail. But I'd never seen a tests suite completely
-abandoned. 
+I've worked on plenty of projects where there were no tests, or not very
+many tests, or really slow tests, or bad tests . But I'd never seen a
+test suite so completely abandoned. 
 
-I was conflicted. My immediate instinct was to focus on getting that
-test suite fixed up. If we were going to have 302 tests, then I wanted
+I was conflicted. My instinct was to immediately get the
+test suite passing. If we were going to have 302 tests, then I wanted
 302 passing tests. But on the other hand, I'd *just* been hired (like 30
-minutes ago). My client hired me to build some features. I knew it would
-be a hard sell to tell my new client "Before I build the thing you
+minutes ago). My client hired me to build some features. Not only would
+it be a hard sell to my new client - "Now, before I build the thing you
 hired me to build, I need to work on some invisibile thing that you
 don't know anythign about for a few days, *then* I can come back and
-work on the thing that you asked me to do. Cool?" Remember *BIG DEADLINE
-LOOMING*. I had to let go a little.
+work on the thing that you asked me to do. Cool?" But also, it
+wouldn't have been the right thing for the project. Remember *BIG
+REALWORLD DEADLINE LOOMING*. I needed to let go a little.
 
-But fear not, gentle tester, I'm not about to throw away everythign I've
-learned to love about testing. It really is a hugely important tool to
-my craft.
-
+But fear not, gentle tester, I'm not about to throw away everything we've
+learned to love about testing.
+ 
 My compromise: instead of spending days fixing every test, or completely
-abandoning testing and BDD, I spent 20 minutes pending every broken
-test. That's right, I didn't even *read* them. If they were failing,
-mark them as pending.
+abandoning testing and BDD, I spent 20 minutes pasting this into every
+failing test:
 
-    pending "pended as part of the great spec revamp of Feb 12. 2013"
+    pending "disabled as part of the great spec reboot of Feb 12. 2013"
+
+
+So for those of you who don't speak [rspec](http://rspec.info), that
+effectively short circuits the test. That's right, I didn't even *read*
+them. If they were failing, I just disabled them.
 
 This left me with:
 
   0 of 302 tests failed. 22 passed. 280 pending.
 
-OK. Not super inspiring. I know. But I'm not a superhero. And now we
-were in a position to have a *meaningful* regression suite. From there I
-tested all my new features and bug fixes. Unpending and fixing tests as
-I had chance to edit the code that affected them. Also, I spent about 30
-minutes a day unpending and fixing the old test suite. A week later, I'd
-introduced some basic integration tests (via
-[cucumber](http://cukes.info/)) in response to some really egregious
-bugs being deployed into production.
+OK. Not super inspiring. I just gave up on all those tests. I know. But
+I'm not a superhero. And *now* we were in a position to have a
+*meaningful regression suite*. What I mean is, now *a failing test meant
+something*. More importantly, it established the idea that *we were
+going to start respecting tests*.
 
-It acutally took quite a while before all the tests were unpended. But
-the ones that lingered as pending, tended to be less releveant tests,
-and served as good candidates for removal from the test suite.
+At least, in *my* mind it did. I will say that over the following weeks getting
+people to even *run* the tests, let alone write any, was an ongoing struggle.
+More than once I got an early morning call about something as basic as "people
+can't sign up". Lo and behold, run the test suite against the currently
+deployed branch and it failed. A wiser me would have invested in setting
+up CI to automatically run the tests for everybody, but, to my credit,
+I already felt like I was ruffling feathers with the amount of time I
+was spending "not doing development."
+
+So the test suite gradually grew as I tested all my new features and bug
+fixes. I unpended specs as I had chance to edit the code that affected
+them. Also, whenever I had a few minutes of downtime, I would work my
+way through the neutered tests, bringing them back into relevent
+specifications.
+
+Upon receiving my second early morning phone call alerting me to a
+really egregious bugs ("People can't register!"), it became obvious
+that we could benefit from some integration testing. I'd introduced just
+a couple basic integration tests (via [cucumber](http://cukes.info/)),
+making sure that registration worked.
 
 I was part of a somewhat _ahem_ ragtag team on this projet. I think the
 most valuable thing I had to offer my teammates was not my
