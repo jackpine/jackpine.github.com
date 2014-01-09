@@ -1,3 +1,8 @@
+---
+layout: post
+title: Test Driven Code Rescue
+---
+
 Day 1
 -----
 
