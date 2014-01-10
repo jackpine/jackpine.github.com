@@ -4,8 +4,8 @@ title: Test Driven Code Rescue  (day 1)
 ---
 
 A former coworker referred a client to me. They were quickly coming up
-on a hard deadline, tied to a real world event (read: an *actual*  hard
-deadline).
+on a hard deadline, tied to a real world event (*read: an <strong>actual</strong>  hard
+deadline*).
 
 I've been around the block once or twice, and participated in my fair
 share of software disasters. But being older and slightly wiser, I wanted to
@@ -14,10 +14,10 @@ potential client that I needed to evaluate the codebase before agreeing
 to work on the project.
 
 Registration was already open. People had paid for this software. The
-bulk of the functionality had to be ready in 9 days, when the service
-opened. Remember, this was a *hard* deadline, tied to a real world
-event. So, I needed to take the proverbial shit or get off the proverbial
-pot. Basically I had one question...
+bulk of the functionality had to be ready in 9 days. Remember, this was
+a *hard* deadline, tied to a real world event. I needed to take the
+proverbial shit or get off the proverbial pot. Basically I had one
+question...
 
 Were there tests?
 ------------------
