@@ -3,6 +3,7 @@ body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
 }
+
 h1, h2{
   font-family: 'Open Sans', sans-serif;
 }
@@ -115,3 +116,24 @@ a[name="contact"] {
   font-size: 24px;
   font-weight: bold;
 }
+
+.post-body {
+  font-size: 25px;
+  font-family: Georgia;
+  width: 960px;
+}
+
+.post-body h1, .post-body h2, .post-body h3 {
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.post-body p {
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+.post-body pre {
+  margin-bottom: 20px;
+}
+ 

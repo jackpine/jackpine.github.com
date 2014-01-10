@@ -1,1 +1,4 @@
 exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, README.md readme.md]
+markdown: rdiscount
+rdiscount:
+    extensions: [smart]
