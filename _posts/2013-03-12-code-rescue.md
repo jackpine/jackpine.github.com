@@ -15,8 +15,8 @@ to work on the project.
 
 Registration was already open. People had paid for this software. The
 bulk of the functionality *had* to be ready in 9 days. Remember, this was
-a *hard* deadline, tied to a real world event. Proverbially, I needed to
-shit or get off the pot. But first, I had one question...
+a *hard* deadline. If I was going to take on the project, I had to hit
+the ground running. But first, I had one question...
 
 Were there tests?
 ------------------
@@ -45,22 +45,19 @@ this deadline, that we haven't had the time to keep the test suite
 up-to-date." Then he assured me, "Once things settle down, we'll have time to
 go back and fix everything up."
 
-I've worked on projects where there were no tests, or not very many
-tests, or really slow tests, or bad tests, but I'd never seen a test
-suite so *completely* abandoned. 
+I've worked on projects where there were no tests, not very many tests,
+really slow tests, or bad tests, but I'd never seen a test suite so
+*completely* abandoned.
 
 *I was conflicted*. My instinct was to immediately get the test suite
 passing. *If we were going to have 302 tests, then I wanted 302 <strong>passing</strong>
 tests dammit!* But on the other hand, I'd *just* been hired (like 30 minutes
-ago). My client hired me to build some features. It would be a hard sell
-to my new client, who had no insight into the software development
-process: "I'd love to build the thing you hired me to build,
-but first I need to spend a few days working on this invisible thing
-that you don't understand. *Then* I can come back and work on the thing
-that you asked me to do. Cool?" More than that, if I put on my project
-manager hat, it wouldn't have been the right thing for the project at
-that time. Remember *BIG REALWORLD DEADLINE LOOMING*. I needed to let go
-a little.
+ago). My client hired me to *build some features*, not to spend days
+working on this invisible thing that he didn't understand. More than
+that, if I put on my project manager hat, it wouldn't have been the
+right thing for the project at that time. Remember *BIG DEADLINE
+LOOMING*. I needed to let go of my sense of perfection and focus on
+moving the project forward.
 
 So let's recap: Software is rumbling apart, very green team, missing
 features, deadline looming. Things are looking pretty dire. *But fear
@@ -71,8 +68,7 @@ My compromise
 -------------
 
 Instead of spending days fixing every test, or completely
-abandoning testing and BDD, I spent 20 minutes pasting this into every
-failing test:
+abandoning testing and BDD, I pasted this into every failing test:
 
     pending "disabled as part of the great spec reboot of Feb 12. 2013"
 
@@ -85,8 +81,8 @@ This left me with:
 
     302 examples, 0 failures, 270 pending
 
-OK. Not super inspiring. I just gave up on all those tests. I know. But
-I'm not a superhero. And *now* we were in a position to have a
+OK. I know. Not super inspiring. I just gave up on all those tests.
+I'm not a superhero. But now we were in a position to have a
 *meaningful regression suite*. Now *a failing test meant something*.
 More importantly, it established the idea that *we were going to start
 respecting tests*.
@@ -102,34 +98,36 @@ back into relevant specifications. Other developers on the team got
 better about it, and some were even enthusiastic. *The battle of the
 minds had been won!*
 
+The Other Battle
+----------------
+
 Upon receiving my second (really) early morning phone call alerting me
 to egregious bugs ("People can't register!"), it became obvious
 that we could benefit from some integration testing. I introduced just
 a couple basic integration tests (via [cucumber](http://cukes.info/)),
-making sure that registration worked. Over the next days we fleshed out
-more integration testing for several important flows through the
-application. And with that, we had solidified our testing strategy and
-graduated development to a place where deploying broken code became the
-exception, not the norm.
+making sure that registration worked. Over the next days, along with
+continued feature development, we fleshed out more integration testing
+for the most important flows of our application. And with that, we
+had solidified our testing strategy and graduated development to a place
+where deploying broken code became the exception, not the norm.
 
 Fixing things is fun!
 ---------------------
 
-I was part of a somewhat _ahem_ ragtag team on this project. I think the
-most valuable thing I had to offer my teammates was not my
-*super-human-coding* skills. What I had was an opportunity to insert, by
-example, the most valuable bits of discipline to my new team. The right
-amount of discipline changes the mindset from "How are we going to get
-the next thing done." to "How can we leverage these new requirements to
-improve the codebase as a whole."
+I was part of a somewhat <*ahem*> ragtag team on this project. The most
+valuable thing I had to offer my teammates was not my
+*super-human-coding* skills. What I had was an opportunity to exemplify
+some discipline for my new team. The right amount of discipline changed
+the mindset from "How are we going to get the next thing done." to "How
+can we leverage these new requirements to improve the codebase as a
+whole."
 
 The code base was initially really rough. We were initially deploying
 severe bugs daily. I cannot emphasize enough how valuable a regression
-suite was in this situation. It allowed us to stop backsliding, and move
+suite was in this situation. It allowed us to stop backsliding and move
 forward. Every day was better than the last, as opposed to every day
 having more things break, new features taking ever longer. It's
-absolutely soul crushing to not feel like you are *allowed to make
-progress*. 
+absolutely soul crushing to not feel  *empowered to make progress*.
 
 Given the right strategy, committing to testing can be unobtrusive. You
 don't have to "Stop everything and test." You don't have to be "driven"
