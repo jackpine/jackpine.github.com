@@ -1,6 +1,6 @@
 ---
-  layout: default
-  title: 
+  layout: post
+  title: CloudFront Breaks Web Fonts on Firefox
 ---
 
 CloudFront Breaks Web Fonts on Firefox.
