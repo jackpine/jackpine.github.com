@@ -3,8 +3,8 @@ layout: default
 title: Jackpine Blog
 ---
 
-<div id="post-listing">
+<div id="post-listing" class="container">
 {% for post in site.posts %}
-  {% include post_wrapper.html url=post.url title=post.title content=post.content %}
+  {% include post_wrapper.html url=post.url title=post.title content=post.content author=post.author %}
 {% endfor %}
 </div>

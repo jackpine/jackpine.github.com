@@ -120,7 +120,7 @@ a[name="contact"] {
 .post-body {
   font-size: 25px;
   font-family: Georgia;
-  width: 960px;
+  border-left: 1px solid #eee;
 }
 
 .post-body h1, .post-body h2, .post-body h3 {
@@ -145,4 +145,24 @@ a[name="contact"] {
 .post-body pre {
   margin-bottom: 20px;
 }
- 
+
+.post-row{
+ border-top: 1px solid #eee;
+ margin-bottom: 100px;
+}
+.author-info{
+ padding-top: 30px;
+ padding-bottom: 30px;
+}
+.author-info .author-badge{
+  height: 15px;
+}
+
+.author-info .gravatar{
+ display: block;
+ max-width: 100px;
+ border-radius: 100px;
+ border: solid 4px white;
+ box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+
+}
