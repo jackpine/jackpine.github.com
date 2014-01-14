@@ -8,6 +8,14 @@ h1, h2{
   font-family: 'Open Sans', sans-serif;
 }
 
+.permalink{
+  visibility: hidden;
+}
+
+a:hover .permalink{
+  visibility: visible;
+}
+
 header {
   text-align: right;
   margin-right: 10px;
@@ -118,6 +126,15 @@ a[name="contact"] {
 .post-body h1, .post-body h2, .post-body h3 {
   margin-bottom: 30px;
   margin-top: 40px;
+}
+.post-body h1 {
+  position: relative;
+}
+.post-body h1 .permalink{
+  position: absolute;
+  top: 9px;
+  left: -39px;
+  font-size: 0.7em;
 }
 
 .post-body p {
