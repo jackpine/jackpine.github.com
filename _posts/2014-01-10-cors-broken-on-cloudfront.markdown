@@ -1,6 +1,7 @@
 ---
   layout: post
   title: CloudFront Breaks Web Fonts on Firefox
+  author: samvevang
 ---
 
 Fancy CSS fonts using @font-face have [been around](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face#Browser_compatibility) for a while now. These fonts are defined in a stylesheet and encoded as special [WOFF or TTF](http://www.fontsquirrel.com/tools/webfont-generator) resources. The good news is that this opens a whole new world of comic-sans style fonts ready to be used in your web application. The bad news is that in the case of a CDN you have to fiddle with cached CORS headers to make them work on Firefox.
