@@ -36,6 +36,25 @@ header #jackpine-avatar{
   margin-top:13px;
 } 
 
+#badges {
+  padding-top: 17px;
+  width: 235px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+#badges .comp-badge{
+  float:left;
+  margin-right: 25px;
+}
+
+#badges img{
+  width: 50px;
+}
+#badges #rails-badge img{
+  width: 55px;
+}
+
 header a, header a:visited {
   color: black;
   text-decoration: none;
@@ -95,7 +114,11 @@ div[role=main] {
 /* front page */
 #jackpine #hero{
   background-color: #a8bd6f;
-  height: 200px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  text-align:center;
+  /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  font-weight: bolder;
 }
 
 #jackpine #about{
