@@ -1,4 +1,18 @@
 exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, README.md readme.md]
 markdown: rdiscount
+permalink: /blog/:year/:month/:day/:title
 rdiscount:
     extensions: [smart]
+
+authors:
+  samvevang:
+    display_name: Sam Vevang
+    first_name: Sam
+    email: sam.vevang@gmail.com
+    github: svevang  
+    bio: I hack on Ruby, Python and Javascript
+  michaelkirk:
+    display_name: Michael Kirk
+    first_name: Michael
+    email: michael.john.kirk@gmail.com
+    github: michaelkirk
