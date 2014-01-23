@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Test Driven Code Rescue  (day 1)
+author: michaelkirk
 ---
 
 A former coworker referred a client to me. They were quickly coming up

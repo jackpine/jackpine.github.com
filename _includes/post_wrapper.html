@@ -1,0 +1,31 @@
+{% assign author_info = site.authors[include.author] %}
+
+<div class="post-row row">
+  {% if author_info %}
+  <div class="col-md-3 author-info">
+    <div class="col-xs-6">
+      <img class="gravatar" src="{{author_info.email | to_gravatar}}?s=200" />
+    </div>
+    <div class="col-xs-6">
+      <div class="row">
+      Hi, I'm {{author_info.first_name}}. {{author_info.bio}}
+      </div>
+      <div class="row">
+        {% if author_info.github %}
+        <a href="http://github.com/{{author_info.github}}"><img class="author-badge" src="/img/GitHub-Mark-64px.png"></a>
+        {% endif %}
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+  {% else %}
+    <div id="jackpine-avatar"></div> 
+  {% endif %}
+ 
+  <div class='col-md-7 post-body'>
+    <h1></span><a href="{{include.url}}"><div class="permalink glyphicon glyphicon-link"></div>{{include.title}}</a></h1>
+    {{include.content}}
+  </div>
+</div>
+
+
