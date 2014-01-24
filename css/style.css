@@ -18,7 +18,7 @@ a:hover .permalink{
 header {
   text-align: right;
   margin-right: 10px;
-  height: 100px;
+  padding-bottom: 10px;
 }
 
 header name {
@@ -67,7 +67,6 @@ header a, header a:visited {
 }
 
 footer {
-  margin-top: 10px;
   text-align: right;
   background-color: #f0ca30;
   padding: 10px;
@@ -82,9 +81,12 @@ footer .contact {
   margin-right: 5px;
 }
 .footer.stacker{
-  margin-top: 25px;
   background-color: #f0ca30;
   padding-bottom: 20px;
+}
+
+#wrapper{
+  background-image: url(/img/pinus_banksiana.jpg);
 }
 
 div#wrapper, footer {
@@ -106,14 +108,17 @@ div[role=main] {
 /* front page */
 #jackpine #hero{
   background-color: #73c27e;
-  padding-top: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   text-align:center;
   font-weight: bolder;
 }
 
 #jackpine #about{
-  height: 175px;
+  background: rgba(54, 108, 25, .5);
+  color: white;
+}
+#jackpine #about .about-facet{
+  padding: 40px 20px 60px 20px;;
 }
 
 #jackpine #about h3{
@@ -122,6 +127,9 @@ div[role=main] {
   margin-bottom: 20px;
   margin-top: 40px
 
+}
+#jackpine #about h3,p {
+  text-shadow: 0px 0px 3px #264b11;
 }
 
 #jackpine h1{
