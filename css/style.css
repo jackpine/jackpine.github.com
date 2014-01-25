@@ -40,7 +40,7 @@ header #jackpine-avatar{
   height: 34px;
   width: 44px;
   margin-top:13px;
-} 
+}
 
 #badges {
   padding-top: 17px;
@@ -80,21 +80,20 @@ footer .contact {
   margin-left: 5px;
   margin-right: 5px;
 }
+
 .footer.stacker{
   background-color: #f0ca30;
   padding-bottom: 20px;
 }
 
-#wrapper{
+#about-wrapper {
   background-image: url(/img/pinus_banksiana.jpg);
-}
-
-div#wrapper, footer {
 }
 
 div.stacker{
   background-color:white;
 }
+
 .container{
 }
 
@@ -117,6 +116,7 @@ div[role=main] {
   background: rgba(54, 108, 25, .5);
   color: white;
 }
+
 #jackpine #about .about-facet{
   padding: 40px 20px 60px 20px;;
 }
@@ -126,9 +126,9 @@ div[role=main] {
   letter-spacing: 2px;
   margin-bottom: 20px;
   margin-top: 40px
-
 }
-#jackpine #about h3,p {
+
+#jackpine #about h3, #jackpine #about p {
   text-shadow: 0px 0px 3px #264b11;
 }
 
@@ -158,9 +158,11 @@ a[name="contact"] {
   margin-bottom: 30px;
   margin-top: 40px;
 }
+
 .post-body h1 {
   position: relative;
 }
+
 .post-body h1 .permalink{
   position: absolute;
   top: 9px;
@@ -181,10 +183,12 @@ a[name="contact"] {
  border-top: 1px solid #eee;
  margin-bottom: 100px;
 }
+
 .author-info{
  padding-top: 30px;
  padding-bottom: 30px;
 }
+
 .author-info .author-badge{
   height: 15px;
 }
@@ -195,5 +199,4 @@ a[name="contact"] {
  border-radius: 100px;
  border: solid 4px white;
  box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
-
 }
