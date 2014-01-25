@@ -128,7 +128,7 @@ div[role=main] {
   margin-top: 40px
 }
 
-#jackpine #about h3,p {
+#jackpine #about h3, #jackpine #about p {
   text-shadow: 0px 0px 3px #264b11;
 }
 
