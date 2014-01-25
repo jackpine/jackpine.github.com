@@ -80,21 +80,20 @@ footer .contact {
   margin-left: 5px;
   margin-right: 5px;
 }
+
 .footer.stacker{
   background-color: #f0ca30;
   padding-bottom: 20px;
 }
 
-#wrapper{
+#about-wrapper {
   background-image: url(/img/pinus_banksiana.jpg);
-}
-
-div#wrapper, footer {
 }
 
 div.stacker{
   background-color:white;
 }
+
 .container{
 }
 
