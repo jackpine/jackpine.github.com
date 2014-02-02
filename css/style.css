@@ -81,6 +81,13 @@ footer .contact {
   margin-right: 5px;
 }
 
+footer .contact-arrow {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 20px;
+  vertical-align: top;
+}
+
 .footer.stacker{
   background-color: #f0ca30;
   padding-bottom: 20px;
@@ -143,10 +150,11 @@ div[role=main] {
   font-weight: bold;
 }
 
-a[name="contact"] {
-  font-size: 24px;
+a.cta, a.cta:hover, a.cta:visited {
   font-weight: bold;
+  font-color: #428bca;
 }
+
 
 .post-body {
   font-size: 25px;
