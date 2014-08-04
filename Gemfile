@@ -4,4 +4,3 @@ gem 'jekyll'
 gem 'rdiscount'
 
 gem 'guard-jekyll'
-gem 'bootstrap-sass'

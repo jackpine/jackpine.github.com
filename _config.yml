@@ -3,6 +3,8 @@ markdown: rdiscount
 permalink: /blog/:year/:month/:day/:title
 rdiscount:
     extensions: [smart]
+sass:
+  sass_dir: bower_components
 
 authors:
   samvevang:
