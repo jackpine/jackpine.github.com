@@ -1,215 +1,249 @@
 ---
 ---
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/_mixins.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/_tooltip.scss";
 
-body {
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+// Import Font Awesome
+/*@import "/packages/font-awesome-4-less/font-awesome.import.less";*/
+/*@import "/fonts/caviar-dreams-fontfacekit/caviardreams_regular_macroman/stylesheet.css";*/
+/*@import "/fonts/caviar-dreams-fontfacekit/caviardreams_bold_macroman/stylesheet.css";*/
+
+$lighter_text: #EAEBEA;
+$light_text: #EDEDED;
+$grey_text: #888888;
+
+body, html {
+  height: 100%;
+  font-family: caviar_dreamsregular;
 }
 
-h1, h2, h3{
-  font-family: 'Open Sans', sans-serif;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.permalink{
-  visibility: hidden;
+h1 {
+  color: $light_text;
+  font-family: caviar_dreamsbold;
+  font-size: 4em;
+  letter-spacing: 0.5em;
+  text-shadow: 0px 4px 4px rgba(150, 150, 150, 1);
+  margin-bottom: 41px;
 }
 
-a:hover .permalink{
-  visibility: visible;
+h2, h3, h4, a, i, span {
+  color: $lighter_text;
 }
 
-header {
-  text-align: right;
-  margin-right: 10px;
-  padding-bottom: 10px;
-
-  name {
-    font-size: 25px;
-    font-weight: bold;
-    margin: 0 5px 0px 0;
-    line-height: 60px;
-    font-weight: 300;
-  }
-
-  #jackpine-avatar{
-    float:right;
-  }
-}
-
-#jackpine-avatar{
-  background-image: url(/img/pine_cone.png);
-  background-repeat: no-repeat;
-  background-position: right center;
-  height: 34px;
-  width: 44px;
-  margin-top:13px;
-}
-
-#badges {
-  padding-top: 17px;
-  width: 235px;
-  margin-left:auto;
-  margin-right: auto;
-
-  .comp-badge {
-    float:left;
-    margin-right: 25px;
-  }
-
-  img {
-    width: 50px;
-  }
-
-  #rails-badge img{
-    width: 55px;
-  }
-}
-
-header a, header a:visited {
-  color: black;
+a, a:link, a:visited, a:hover, a:active {
   text-decoration: none;
+  color: $lighter_text;
 }
 
-footer {
-  text-align: right;
-  background-color: #f0ca30;
-  padding: 10px;
-
-  a, a:visited {
-    color: black;
-  }
-
-  .contact {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .contact-arrow {
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 20px;
-    vertical-align: top;
-  }
+li {
+  list-style: none;
 }
 
-.footer.stacker{
-  background-color: #f0ca30;
-  padding-bottom: 20px;
+ul {
+  padding: 0;
 }
 
-#about-wrapper {
-  background-image: url(/img/pinus_banksiana.jpg);
-}
-
-div.stacker{
-  background-color:white;
-}
-
-.container{
-}
-
-div[role=main] {
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 50px;
-}
-
-/* front page */
-#jackpine #hero{
-  background-color: #73c27e;
-  padding-bottom: 20px;
-  text-align:center;
-  font-weight: bolder;
-}
-
-#jackpine #about{
-  background: rgba(54, 108, 25, .5);
-  color: white;
-}
-
-#jackpine #about .about-facet{
-  padding: 40px 20px 60px 20px;;
-}
-
-#jackpine #about h3{
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  margin-top: 40px
-}
-
-#jackpine #about h3, #jackpine #about p {
-  text-shadow: 0px 0px 3px #264b11;
-}
-
-#jackpine h1{
-  color: white;
-  text-align:center;
-  letter-spacing: 1px;
-}
-
-#who-we-are {
-  margin-top: 5px;
-  font-weight: bold;
-}
-
-a.cta, a.cta:hover, a.cta:visited {
-  font-weight: bold;
-  font-color: #428bca;
-}
-
-
-.post-body {
-  font-size: 25px;
-  font-family: Georgia;
-  border-left: 1px solid #eee;
-}
-
-.post-body h1, .post-body h2, .post-body h3 {
-  margin-bottom: 30px;
-  margin-top: 40px;
-}
-
-.post-body h1 {
+.full_page {
+  width: 100%;
+  height: 100%;
   position: relative;
+  overflow: hidden;
+  text-align: center;
 }
 
-.post-body h1 .permalink{
+.centered {
+  width: 75%;
+  margin: auto;
   position: absolute;
-  top: 9px;
-  left: -39px;
-  font-size: 0.7em;
+  top: 50%;
+  left: 50%;
+  @include translate(-50%,-50%);
 }
 
-.post-body p {
-  margin-bottom: 20px;
-  line-height: 40px;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.post-body pre {
-  margin-bottom: 20px;
+.bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+
+#main {
+  .nav-bar {
+    @include box-sizing(border-box);
+    width: 100%;
+    height: 400px;
+    padding: 50px 86px 0 86px;
+    font-size: 21px;
+    letter-spacing: 8.4px;
+    @include gradient-vertical(rgba(0,0,0,1), rgba(255,255,255,0));
+    a {
+      display: block;
+      float: left;
+      width: 33.33%;
+    }
+  }
+
+  #title {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    width: 440px;
+    height: 380px;
+    margin-top: -190px;
+    margin-left: -220px;
+    img {
+      width: 225px;
+      height: 225px;
+    }
+    h2 {
+      letter-spacing: 11.5px;
+    }
+    h3 {
+      letter-spacing: 4.1px;
+      margin-top: 25px;
+      line-height: 30px;
+    }
+  }
+
+  #scroll {
+    bottom: 37px;
+    span {
+      letter-spacing: 4px;
+      font-size: 15.5px;
+    }
+    i {
+      font-size: 30px;
+      line-height: 8px;
+    }
+  }
 }
 
-.post-row{
- border-top: 1px solid #eee;
- margin-bottom: 100px;
+#our_trade {
+  p {
+    color: $grey_text;
+    max-width: 1144px;
+    margin: 0 auto;
+    font-size: 1.5em;
+    font-family: serif;
+    letter-spacing: 0.025em;
+    line-height: 1.9em;
+  }
 }
 
-.author-info{
- padding-top: 30px;
- padding-bottom: 30px;
+#our_guild {
+  .centered {
+    width: 90%;
+  }
+  .headshots {
+    text-align: center;
+    margin: 0 auto;
+    li {
+      display: inline-block;
+      @include size(230px, 230px);
+      margin: 20px 30px;
+      position: relative;
+      .circle {
+        position: absolute;
+        @include box-shadow(inset 0 0 20px #fff);
+        @include size(230px, 230px);
+        z-index: 5;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+      }
+      img {
+        position: absolute;
+        @include size(230px, 230px);
+        @inculde box-shadow(0px 8px 5px 0px rgba(50, 50, 50, 0.73));
+        border-radius: 50%;
+        z-index: 3;
+        top: 0;
+        left: 0;
+       }
+     }
+  }
 }
 
-.author-info .author-badge{
-  height: 15px;
-}
+#lets_chat {
+  h1 { margin-bottom: 15px; }
+  .form {
+    width: 64%;
+    margin: 0 auto;
+    input, textarea {
+      width: 100%;
+      height: 30px;
+      padding-left: 15px;
+      letter-spacing: 0.4em;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      border: 1px solid #969696;
+      color: #555;
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+    input[type='submit'] {
+      width: 136px;
+      background-color: white;
+      border: 1px solid #969696;
+      color: #555;
+    }
+    textarea {
+      height: 135px;
+    }
+  }
 
-.author-info .gravatar{
- display: block;
- max-width: 100px;
- border-radius: 100px;
- border: solid 4px white;
- box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+  #near-cone {
+    position: absolute;
+    z-index: -1;
+    bottom: -30px;
+    right: -123px;
+    width: 501px;
+    height: 687px;
+  }
+  #mid-cone {
+    position: absolute;
+    z-index: -2;
+    bottom: 39px;
+    left: -39px;
+    width: 321px;
+    height: 435px;
+  }
+  #far-cone {
+    position: absolute;
+    z-index: -3;
+    bottom: -6%;
+    left: 31%;
+    width: 126px;
+    height: 164px;
+  }
+  .footer {
+    padding-bottom: 15px;
+    #contact-info {
+      margin: 0 auto;
+      width: 70%;
+      li {
+        @include box-sizing(border-box);
+        float: left;
+        width: 33.3%;
+        border-left: 1px solid #555555;
+        color: $grey_text;
+        a { color: $grey_text; }
+        &:first-of-type {
+          border: none;
+        }
+      }
+    }
+  }
 }
