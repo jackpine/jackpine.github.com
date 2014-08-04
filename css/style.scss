@@ -3,11 +3,9 @@
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap/_mixins.scss";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap/_tooltip.scss";
-
-// Import Font Awesome
-/*@import "/packages/font-awesome-4-less/font-awesome.import.less";*/
-/*@import "/fonts/caviar-dreams-fontfacekit/caviardreams_regular_macroman/stylesheet.css";*/
-/*@import "/fonts/caviar-dreams-fontfacekit/caviardreams_bold_macroman/stylesheet.css";*/
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/_glyphicons.scss";
+@import "/fonts/caviar-dreams-fontfacekit/caviardreams_regular_macroman/stylesheet.css";
+@import "/fonts/caviar-dreams-fontfacekit/caviardreams_bold_macroman/stylesheet.css";
 
 $lighter_text: #EAEBEA;
 $light_text: #EDEDED;
