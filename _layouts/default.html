@@ -7,39 +7,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-
-    <link rel="stylesheet" href="/css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/stellar/jquery.stellar.min.js"></script>
+    <script src="/bower_components/panelsnap/jquery.panelSnap.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="/js/libs/modernizr-2.7.1.min.js"></script>
 </head>
 <body id="{{ page.title }}">
-    <header class="container">
-      <name><a href="/">Jackpine</a></name>
-      <div id="jackpine-avatar">
-      </div>
-    </header>
-  <div id="wrapper">
-      {{ content }}
-  </div>
-  <div class="stacker footer">
-    <footer class="container">
-      <span class="contact-arrow">→</span>
-      We are human, contact us:
-      <span class="contact">
-        <a href="mailto:info@jackpine.me?subject=jackpine%20info">info@jackpine.me</a> | 
-        <a href="tel:+15707959038">1.570.795.9038</a>
-      </span> 
-    </footer>
-  </div>
+  {{ content }}
 
-  <script src="/js/libs/jquery-1.10.2.min.js"></script>
-
-  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="/js/plugins.js"></script>
-  <script src="/js/script.js"></script>
+  <script src="/js/main.js"></script>
 
   <!-- Asynchronous Google Analytics snippet. -->
   <script type="text/javascript">
