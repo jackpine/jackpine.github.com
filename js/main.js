@@ -37,6 +37,8 @@ $(function() {
     console.log('element centered');
   }
 
-  $(window).resize(resizeWindow);
-
+  $(window).resize(function(){
+    resizeWindow();
+    $(window).stellar('refresh');
+  });
 });
