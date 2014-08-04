@@ -1,3 +1,6 @@
+---
+---
+
 body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
@@ -19,18 +22,18 @@ header {
   text-align: right;
   margin-right: 10px;
   padding-bottom: 10px;
-}
 
-header name {
-  font-size: 25px;
-  font-weight: bold;
-  margin: 0 5px 0px 0;
-  line-height: 60px;
-  font-weight: 300;
-}
+  name {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 5px 0px 0;
+    line-height: 60px;
+    font-weight: 300;
+  }
 
-header #jackpine-avatar{
-  float:right;
+  #jackpine-avatar{
+    float:right;
+  }
 }
 
 #jackpine-avatar{
@@ -47,18 +50,19 @@ header #jackpine-avatar{
   width: 235px;
   margin-left:auto;
   margin-right: auto;
-}
 
-#badges .comp-badge{
-  float:left;
-  margin-right: 25px;
-}
+  .comp-badge {
+    float:left;
+    margin-right: 25px;
+  }
 
-#badges img{
-  width: 50px;
-}
-#badges #rails-badge img{
-  width: 55px;
+  img {
+    width: 50px;
+  }
+
+  #rails-badge img{
+    width: 55px;
+  }
 }
 
 header a, header a:visited {
@@ -70,22 +74,22 @@ footer {
   text-align: right;
   background-color: #f0ca30;
   padding: 10px;
-}
 
-footer a, footer a:visited {
-  color: black;
-}
+  a, a:visited {
+    color: black;
+  }
 
-footer .contact {
-  margin-left: 5px;
-  margin-right: 5px;
-}
+  .contact {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 
-footer .contact-arrow {
-  font-size: 40px;
-  font-weight: 900;
-  line-height: 20px;
-  vertical-align: top;
+  .contact-arrow {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 20px;
+    vertical-align: top;
+  }
 }
 
 .footer.stacker{
