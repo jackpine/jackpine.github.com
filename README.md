@@ -12,7 +12,7 @@ Installation
     bundle exec jekyll 
     
     # run local webserver
-    bundle exec jekyll serve
+    bundle exec jekyll serve --watch
 
 
 Deployment
