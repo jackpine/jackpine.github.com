@@ -12,8 +12,8 @@
   <img class='bg' src="img/woodshop_background.jpg" />
   <div id="title">
     <img src="img/jackpine_logo.png" />
-    <h2>DIGITAL CRAFTSMAN</h2>
-    <h3>We specialize in<br />new & reclaimed code.</h3>
+    <h2 id="subheading">DIGITAL CRAFTSMAN</h2>
+    <h3 id="tagline">We specialize in<br />new & reclaimed code.</h3>
   </div>
   <div class="footer" id="scroll">
     <span>SCROLL ONWARD</span>
@@ -52,7 +52,7 @@
 <div class="full_page" id="lets_chat" data-panel="lets_chat" data-stellar-offset-parent="true">
   <div class="centered">
     <h1>LET'S CHAT</h1>
-    <div class="form">
+    <form action="//forms.brace.io/michael.john.kirk@gmail.com" method="POST">
       <span class="require"><input type="text" name="name" placeholder="What is your name?"/></span>
       <span class="require"><input type="text" name="email" placeholder="What is your email address?" /></span>
       <span class="require"><input type="text" name="digits" placeholder="What are your digits?" /></span>
@@ -60,8 +60,9 @@
       <span class="require"><textarea name="help" placeholder="How can Jackpine help you?"></textarea></span>
       <input type="text" name="budget" placeholder="What is your budget?" />
       <input type="text" name="word" placeholder="How did you hear about us?" />
+      <input type="hidden" name="_next" value="//jackpine.me#thank_you" />
       <input type="submit" value="SUBMIT" />
-    </div>
+    </form>
   </div>
 
   <img data-stellar-ratio="1.5" id="near-cone" src="img/near_cone.png">
