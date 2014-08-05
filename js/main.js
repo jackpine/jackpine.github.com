@@ -41,4 +41,16 @@ $(function() {
     resizeWindow();
     $(window).stellar('refresh');
   });
+
+  function renderThankYouForContacting(){
+    var thankYouHeading = "Thanks for contacting us.";
+    var thankYouText = "We'll get back to you shortly. Or give us a call to get a speedy response: " + "323.545.8755";
+    $("#subheading").html(thankYouHeading);
+    $("#tagline").html(thankYouText);
+  }
+
+  if(window.location.hash.substring(1) == "thank_you") {
+    renderThankYouForContacting();
+  }
+
 });
