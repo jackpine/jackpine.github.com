@@ -3,7 +3,7 @@ $(function() {
 
   $('body').panelSnap({
     panelSelector: '.full_page',
-    $menu: '.nav-bar',
+    $menu: '.panel-nav',
   });
 
   $('.headshots li').tooltip();
