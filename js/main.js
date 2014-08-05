@@ -1,10 +1,21 @@
+function isMobile() {
+  //width taken from bootstrap variable: "$screen-sm"
+  if(window.innerWidth <= 768) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 $(function() {
   $(window).stellar();
 
-  $('body').panelSnap({
-    panelSelector: '.full_page',
-    $menu: '.panel-nav',
-  });
+  if(!isMobile()) {
+    $('body').panelSnap({
+      panelSelector: '.full_page',
+      $menu: '.panel-nav',
+    });
+  }
 
   $('.headshots li').tooltip();
 
