@@ -26,6 +26,7 @@ body::-webkit-scrollbar {
 }
 
 h1 {
+  white-space: nowrap;
   color: $light_text;
   font-family: caviar_dreamsbold;
   font-size: 64px;
