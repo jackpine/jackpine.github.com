@@ -121,6 +121,7 @@ ul {
   }
   .nav-bar {
     position: absolute;
+    z-index: 1;
     @include box-sizing(border-box);
     width: 100%;
 
@@ -149,6 +150,15 @@ ul {
     width: 440px;
     height: 380px;
     margin-left: -220px;
+    .circular-shadow {
+      @include box-shadow(0 0 300px 100px #000);
+      @media (max-width: $screen-sm-min) {
+        @include box-shadow(0 0 50px 25px #000);
+      }
+      z-index: 5;
+      border-radius: 50%;
+    }
+
     img {
       width: 225px;
       height: 225px;
