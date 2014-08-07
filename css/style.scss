@@ -112,6 +112,12 @@ ul {
 }
 
 #main {
+
+  .bg {
+    @media (max-width: $screen-sm-min) {
+      height: 160%;
+    }
+  }
   .nav-bar {
     position: absolute;
     @include box-sizing(border-box);
