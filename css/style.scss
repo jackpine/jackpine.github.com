@@ -253,6 +253,9 @@ ul {
   h1 { margin-bottom: 15px; }
   form {
     width: 64%;
+    @media (max-width: $screen-sm-min) {
+      width: 90%;
+    }
     margin: 0 auto;
     input, textarea {
       width: 100%;
@@ -262,8 +265,8 @@ ul {
       letter-spacing: 8px;
       font-size: 19px;
       @media (max-width: $screen-sm-min) {
-        letter-spacing: 0px;
-        font-size: 11px;
+        letter-spacing: 1px;
+        font-size: 14px;
       }
       margin-bottom: 15px;
       border: 1px solid #969696;
