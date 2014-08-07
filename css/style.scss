@@ -101,7 +101,6 @@ ul {
     letter-spacing: 8.4px;
     text-align: center;
 
-    /* small screens */
     @media (max-width: $screen-sm-min) {
       padding: 10px 5px 0 5px;
       font-size: 18px;
@@ -118,6 +117,9 @@ ul {
   #title {
     position: absolute;
     top: 46%;
+    @media (max-width: $screen-sm-min) {
+      top: 54%;
+    }
     left: 50%;
     width: 440px;
     height: 380px;
@@ -126,19 +128,34 @@ ul {
     img {
       width: 225px;
       height: 225px;
+      @media (max-width: $screen-sm-min) {
+        width: 180px;
+        height: 180px;
+      }
     }
     h2 {
       letter-spacing: 11.5px;
+      @media (max-width: $screen-sm-min) {
+        font-size: 19px;
+        letter-spacing: 6px;
+      }
     }
     h3 {
       letter-spacing: 4.1px;
       margin-top: 25px;
       line-height: 30px;
+      @media (max-width: $screen-sm-min) {
+        font-size: 16px;
+        letter-spacing: 3px;
+      }
     }
   }
 
   #scroll {
     bottom: 37px;
+    @media (max-width: $screen-sm-min) {
+      bottom: 10px;
+    }
     a {
       letter-spacing: 4px;
       font-size: 15.5px;
