@@ -8,7 +8,9 @@ function isMobile() {
 }
 
 $(function() {
-  $(window).stellar();
+  if (!Modernizr.touch) {
+    $(window).stellar();
+  };
 
   if(!isMobile()) {
     $('body').panelSnap({
