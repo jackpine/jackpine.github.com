@@ -84,7 +84,6 @@ ul {
     @include translate(-50%,-50%);
     @media (max-width: $screen-sm-min) {
       height: auto;
-      position: relative;
     }
   }
   .footer {
