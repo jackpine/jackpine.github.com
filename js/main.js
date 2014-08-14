@@ -8,7 +8,16 @@ function isMobile() {
 }
 
 $(function() {
-  $(window).stellar();
+  if (!Modernizr.touch) {
+    $(window).stellar();
+    $('.headshots li').tooltip();
+  } else {
+    $.each($('.headshots li'), function() {
+      $head = $(this);
+      title = '<span class="head-title">' + this.title + '</span>'
+      $head.append(title);
+    });
+  };
 
   if(!isMobile()) {
     $('body').panelSnap({
@@ -16,8 +25,6 @@ $(function() {
       $menu: '.panel-nav',
     });
   }
-
-  $('.headshots li').tooltip();
 
   function resizeWindow() {
    // background image aboslutely centered and full bleed
