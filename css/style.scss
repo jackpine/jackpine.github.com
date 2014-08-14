@@ -253,7 +253,7 @@ ul {
         left: 0;
       }
       img {
-        position: absolute;
+        position: relative;
         @include size(230px, 230px);
         @inculde box-shadow(0px 8px 5px 0px rgba(50, 50, 50, 0.73));
         border-radius: 50%;
@@ -268,8 +268,6 @@ ul {
 .touch #our_guild .headshots li {
   height: 270px;
   .head-title {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     left: 0;
     color: black;
