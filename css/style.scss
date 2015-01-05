@@ -212,6 +212,10 @@ ul {
     @media (max-width: $screen-sm-min) {
       font-size: 16px;
     }
+    a, a:link, a:visited, a:hover, a:active {
+      color: $grey_text;
+      text-decoration: underline;
+    }
   }
 
   #spruce_bough {
