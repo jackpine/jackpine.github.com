@@ -203,6 +203,9 @@ section {
 #the_guild {
   background-image: url("../img/diamond-pattern.png");
   background-size: contain;
+  @media (max-width: $screen-sm-min) {
+    background-size: cover;
+  }
   .centered {
     width: 90%;
   }
@@ -256,9 +259,15 @@ section {
 }
 
 #lets_chat {
+  //needed for absolutely positioned cones
+  position: relative;
   h1 {
     margin-top: 80px;
     margin-bottom: 80px;
+    @media (max-width: $screen-sm-min) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
   }
   form {
     width: 64%;
@@ -327,11 +336,12 @@ section {
 
 .footer {
   text-align: center;
-  margin-top: 60px;
-  padding-bottom: 40px;
+  margin-top: 100px;
+  padding-bottom: 110px;
   width: 100%;
   @media (max-width: $screen-sm-min) {
-    position: relative;
+    margin-top: 30px;
+    padding-bottom: 30px;
   }
   #contact-info {
     margin: 0 auto;
