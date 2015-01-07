@@ -132,12 +132,7 @@ section {
   background-image: url("../img/woodshop_background.jpg");
   background-position: center;
   background-size: cover;
-
-  .bg {
-    @media (max-width: $screen-sm-min) {
-      height: 160%;
-    }
-  }
+  height: 100%;
   #title {
     position: relative; // needed to keep the logo above the bg-gradient which is absolutely positioned.
     margin: 150px auto;
@@ -177,6 +172,9 @@ section {
   }
 
   #scroll {
+    bottom: 10px;
+    position: absolute;
+    width: 100%;
     @media (max-width: $screen-sm-min) {
       bottom: 10px;
     }
