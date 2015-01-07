@@ -59,7 +59,7 @@ ul {
 
 section {
   width: 100%;
-  height: 100%;
+  height: 800px;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -86,11 +86,6 @@ section {
       height: auto;
     }
   }
-  .footer {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-  }
 }
 
 .bg {
@@ -111,44 +106,42 @@ section {
   @include gradient-vertical(rgba(0,0,0,1), rgba(255,255,255,0));
 }
 
+.nav-bar {
+  position: absolute;
+  z-index: 1;
+  @include box-sizing(border-box);
+  width: 100%;
+
+  padding: 50px 86px 0 86px;
+  font-size: 21px;
+  letter-spacing: 8.4px;
+  text-align: center;
+
+  @media (max-width: $screen-sm-min) {
+    padding: 10px 5px 0 5px;
+    font-size: 18px;
+    letter-spacing: 7px;
+  }
+
+  a {
+    display: block;
+    float: left;
+    width: 33.33%;
+  }
+}
+
 #main {
+  background-image: url("../img/woodshop_background.jpg");
+  background-position: center;
+  background-size: cover;
 
   .bg {
     @media (max-width: $screen-sm-min) {
       height: 160%;
     }
   }
-  .nav-bar {
-    position: absolute;
-    z-index: 1;
-    @include box-sizing(border-box);
-    width: 100%;
-
-    padding: 50px 86px 0 86px;
-    font-size: 21px;
-    letter-spacing: 8.4px;
-    text-align: center;
-
-    @media (max-width: $screen-sm-min) {
-      padding: 10px 5px 0 5px;
-      font-size: 18px;
-      letter-spacing: 7px;
-    }
-
-    a {
-      display: block;
-      float: left;
-      width: 33.33%;
-    }
-  }
-
   #title {
-    position: relative;
-    top: 23%;
-    left: 50%;
-    width: 440px;
-    height: 380px;
-    margin-left: -220px;
+    margin: 150px auto;
     .circular-shadow {
       @include box-shadow(0 0 300px 100px #000);
       @media (max-width: $screen-sm-min) {
@@ -185,7 +178,6 @@ section {
   }
 
   #scroll {
-    bottom: 37px;
     @media (max-width: $screen-sm-min) {
       bottom: 10px;
     }
@@ -345,6 +337,8 @@ section {
   }
   .footer {
     position: absolute;
+    bottom: 10px;
+    width: 100%;
     @media (max-width: $screen-sm-min) {
       position: relative;
     }
