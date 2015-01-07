@@ -19,13 +19,6 @@ $(function() {
     });
   };
 
-  if(!isMobile()) {
-    $('body').panelSnap({
-      panelSelector: '.full_page',
-      $menu: '.panel-nav',
-    });
-  }
-
   function resizeWindow() {
    // background image aboslutely centered and full bleed
    var backgrounds = $(".bg"),
