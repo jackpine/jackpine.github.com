@@ -19,28 +19,7 @@ $(function() {
     });
   };
 
-  function resizeWindow() {
-   // background image aboslutely centered and full bleed
-   var backgrounds = $(".bg"),
-       $window = $(window);
-
-   backgrounds.each( function() {
-     var $bg = $(this);
-     aspectRatio = $bg.width() / $bg.height();
-
-      if ( ($window.width() / $window.height()) < aspectRatio ) {
-        $bg.removeClass('bgwidth').addClass('bgheight');
-        $bg.css({ marginLeft: -($bg.width()/2 - $(window).width()/2) });
-      } else {
-        $bg.removeClass('bgheight').addClass('bgwidth');
-        $bg.css({ marginLeft: 0 });
-      }
-   });
-  }
-
-
   $(window).resize(function(){
-    resizeWindow();
     $(window).stellar('refresh');
   });
 
