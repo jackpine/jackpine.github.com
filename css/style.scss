@@ -98,8 +98,6 @@ section {
 .bgheight { height: 100%; }
 
 .bg-gradient {
-  z-index: -1;
-  top: 0;
   position: absolute;
   width: 100%;
   height: 400px;
@@ -141,6 +139,7 @@ section {
     }
   }
   #title {
+    position: relative; // needed to keep the logo above the bg-gradient which is absolutely positioned.
     margin: 150px auto;
     .circular-shadow {
       @include box-shadow(0 0 300px 100px #000);
