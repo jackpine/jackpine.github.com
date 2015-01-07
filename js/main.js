@@ -38,15 +38,6 @@ $(function() {
    });
   }
 
-  function centerElement() {
-    // centered class absolutely centered
-    var $centered = $(".centered");
-    $centered.css({
-      marginLeft: -($centered.width()/2),
-      marginTop:  -($centered.height()/2)
-    });
-    console.log('element centered');
-  }
 
   $(window).resize(function(){
     resizeWindow();
