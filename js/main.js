@@ -11,6 +11,9 @@ $(function() {
   if (!Modernizr.touch) {
     $(window).stellar();
     $('.headshots li').tooltip();
+    $(window).resize(function(){
+      $(window).stellar('refresh');
+    });
   } else {
     $.each($('.headshots li'), function() {
       $head = $(this);
@@ -18,10 +21,6 @@ $(function() {
       $head.append(title);
     });
   };
-
-  $(window).resize(function(){
-    $(window).stellar('refresh');
-  });
 
   function renderThankYouForContacting(){
     var thankYouHeading = "Thanks for contacting us.";
