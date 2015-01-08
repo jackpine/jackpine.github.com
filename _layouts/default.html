@@ -7,12 +7,16 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script>
+      img = 'img/woodshop_background.jpg';
+      img_preload = new Image();
+      img_preload.src = img;
+    </script>
     <link rel="stylesheet" href="/css/style.css">
-
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/stellar/jquery.stellar.min.js"></script>
     <script src="/js/libs/modernizr-2.7.1.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body id="{{ page.title }}">
   {{ content }}
