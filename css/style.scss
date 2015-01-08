@@ -189,7 +189,6 @@ section {
   background-image: url("../img/wide-couch.jpg");
   background-size: cover;
   @media (max-width: $screen-sm-min) {
-    background-size: auto;
     padding-bottom: 10px;
     .headshots li {
       height: 270px;
