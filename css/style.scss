@@ -192,12 +192,17 @@ section {
     background-image: url("../img/tall-couch.jpg");
     padding-bottom: 10px;
     .headshots li {
+      .photo-frame {
+        margin-bottom: -20px;
+      }
       .head-title {
+        width: 80%;
+        padding: 10%;
+        background: rgba(0, 0, 0, 0.39);
         color: white;
         font-weight: bold;
         font-size: 22px;
         text-shadow: 0 0 1px black;
-        width: 100%;
       }
     }
   }
