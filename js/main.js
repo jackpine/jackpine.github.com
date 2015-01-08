@@ -11,17 +11,16 @@ $(function() {
   if (!Modernizr.touch) {
     $(window).stellar();
     $('.headshots li').tooltip();
+    $(window).resize(function(){
+      $(window).stellar('refresh');
+    });
   } else {
     $.each($('.headshots li'), function() {
       $head = $(this);
-      title = '<span class="head-title">' + this.title + '</span>'
+      title = '<div class="head-title">' + this.title + '</div>'
       $head.append(title);
     });
   };
-
-  $(window).resize(function(){
-    $(window).stellar('refresh');
-  });
 
   function renderThankYouForContacting(){
     var thankYouHeading = "Thanks for contacting us.";
