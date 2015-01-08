@@ -19,37 +19,7 @@ $(function() {
     });
   };
 
-  function resizeWindow() {
-   // background image aboslutely centered and full bleed
-   var backgrounds = $(".bg"),
-       $window = $(window);
-
-   backgrounds.each( function() {
-     var $bg = $(this);
-     aspectRatio = $bg.width() / $bg.height();
-
-      if ( ($window.width() / $window.height()) < aspectRatio ) {
-        $bg.removeClass('bgwidth').addClass('bgheight');
-        $bg.css({ marginLeft: -($bg.width()/2 - $(window).width()/2) });
-      } else {
-        $bg.removeClass('bgheight').addClass('bgwidth');
-        $bg.css({ marginLeft: 0 });
-      }
-   });
-  }
-
-  function centerElement() {
-    // centered class absolutely centered
-    var $centered = $(".centered");
-    $centered.css({
-      marginLeft: -($centered.width()/2),
-      marginTop:  -($centered.height()/2)
-    });
-    console.log('element centered');
-  }
-
   $(window).resize(function(){
-    resizeWindow();
     $(window).stellar('refresh');
   });
 
@@ -64,4 +34,16 @@ $(function() {
     renderThankYouForContacting();
   }
 
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
 });
