@@ -14,7 +14,7 @@ $(function() {
   } else {
     $.each($('.headshots li'), function() {
       $head = $(this);
-      title = '<span class="head-title">' + this.title + '</span>'
+      title = '<div class="head-title">' + this.title + '</div>'
       $head.append(title);
     });
   };
