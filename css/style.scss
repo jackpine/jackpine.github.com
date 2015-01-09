@@ -106,7 +106,7 @@ section {
     position: relative; // needed to keep the logo above the bg-gradient which is absolutely positioned.
     padding-top: 150px;
     .circular-shadow {
-      @include box-shadow(0 0 300px 100px #000);
+      @include box-shadow(0 0 150px 50px #000);
       @media (max-width: $screen-sm-min) {
         @include box-shadow(0 0 50px 25px #000);
       }
