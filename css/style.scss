@@ -141,19 +141,12 @@ section {
   }
 
   #scroll {
-    bottom: 10px;
+    bottom: 25px;
     position: absolute;
     width: 100%;
-    @media (max-width: $screen-sm-min) {
-      bottom: 10px;
-    }
     a {
       letter-spacing: 4px;
-      font-size: 15.5px;
-    }
-    span {
-      font-size: 17px;
-      margin-left: -16px;
+      font-size: 13px;
     }
   }
 }
