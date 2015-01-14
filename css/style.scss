@@ -286,10 +286,10 @@ section {
   #near-cone {
     position: absolute;
     z-index: -1;
-    bottom: -30px;
-    right: -123px;
-    width: 501px;
-    height: 687px;
+    bottom: 93px;
+    right: -43px;
+    width: 275px;
+    height: 400px;
     @media (max-width: $screen-sm-min) {
       display: none !important;
     }
@@ -297,10 +297,10 @@ section {
   #mid-cone {
     position: absolute;
     z-index: -2;
-    bottom: 39px;
+    bottom: 96px;
     left: -39px;
-    width: 321px;
-    height: 435px;
+    width: 193px;
+    height: 261px;
   }
   #far-cone {
     position: absolute;
@@ -317,8 +317,8 @@ section {
 
 .footer {
   text-align: center;
-  margin-top: 100px;
-  padding-bottom: 110px;
+  margin-top: 20px;
+  padding-bottom: 55px;
   width: 100%;
   @media (max-width: $screen-sm-min) {
     margin-top: 30px;

@@ -8,12 +8,6 @@ function isMobile() {
 }
 
 $(function() {
-  if (!Modernizr.touch) {
-    $(window).stellar();
-    $(window).resize(function(){
-      $(window).stellar('refresh');
-    });
-  }
 
   function renderThankYouForContacting(){
     var thankYouHeading = "Thanks for contacting us.";
