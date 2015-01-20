@@ -1,6 +1,6 @@
 exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, README.md readme.md]
 markdown: rdiscount
-permalink: /blog/:year/:month/:day/:title
+permalink: /blog/:categories/:title
 rdiscount:
     extensions: [smart]
 sass:
