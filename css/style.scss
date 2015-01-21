@@ -62,6 +62,7 @@ section {
   text-align: center;
   .centered {
     width: 75%;
+    max-width: 1144px;
     margin: auto;
   }
 }
@@ -154,7 +155,6 @@ section {
 #our_trade {
   p {
     color: $grey_text;
-    max-width: 1144px;
     text-align: left;
     font-size: 24px;
     font-family: serif;
