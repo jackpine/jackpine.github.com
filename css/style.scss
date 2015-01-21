@@ -286,8 +286,8 @@ section {
     position: absolute;
     z-index: -1;
     bottom: 93px;
-    right: -43px;
-    width: 275px;
+    right: 0px;
+    width: 229px;
     height: 400px;
     @media (max-width: $screen-sm-min) {
       display: none !important;
