@@ -1,0 +1,8 @@
+<h1> Posts by author :{{ page.author }}</h1>
+<div>
+  {% for post in site.posts do %}
+    {% if post.author == page.author %}
+      <a href="{{ post.url }}/">{{ post.title }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
