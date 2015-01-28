@@ -24,15 +24,19 @@ the source of the image.
 
 CODE HERE
 
-img = new Image
-img.src = 'image/source.png'
+{% highlight javascript %}
+img = new Image;
+img.src = 'image/source.png';
+{% endhighlight %}
 
 And placing this inline at the top of the html page before any calls to the JS or CSS, GETs
 image before anything else.  For more bonus points in quick loading don't use any jQuery, just
 straight JS and it will shave a few milliseconds.  And for even more make a low res picture and
 overlap the images using the CSS background comma spearated.
 
+{% highlight css %}
 background-image: url(low-res.png), url(high-res.png);
+{% endhighlight %}
 
 This will basically load the first image on the list and once the next image is complete it will
 overlap it in a sudden blink. The effect is pretty suddle if you aren't looking for it.
