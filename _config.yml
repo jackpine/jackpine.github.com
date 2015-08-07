@@ -5,6 +5,9 @@ rdiscount:
     extensions: [smart]
 sass:
   sass_dir: bower_components
+  
+prose:
+  media: "images/blog"
 
 authors:
   samvevang:
