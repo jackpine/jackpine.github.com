@@ -2,7 +2,9 @@
 layout: post
 title: Test Driven Code Rescue  (day 1)
 author: michaelkirk
+published: false
 ---
+
 
 A former coworker referred a client to me. They were quickly coming up
 on a hard deadline, tied to a real world event (*read: an <strong>actual</strong>  hard
@@ -139,4 +141,3 @@ new features instead of cleaning up messes. Instead of pulling
 all-nighters grappling with poorly understood code, just try something,
 run the test suite and go home already. Maybe you can even sleep to a
 reasonable hour. ;)
-
