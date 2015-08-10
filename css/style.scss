@@ -289,6 +289,9 @@ section {
     right: 0px;
     width: 229px;
     height: 400px;
+    background-image: url("../img/near_cone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     @media (max-width: $screen-sm-min) {
       display: none !important;
     }
@@ -300,6 +303,9 @@ section {
     left: -39px;
     width: 193px;
     height: 261px;
+    background-image: url("../img/mid_cone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   #far-cone {
     position: absolute;
@@ -308,6 +314,9 @@ section {
     left: 31%;
     width: 126px;
     height: 164px;
+    background-image: url("../img/far_cone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     @media (max-width: $screen-sm-min) {
       display: none !important;
     }
