@@ -5,7 +5,6 @@ author: michaelkirk
 published: true
 ---
 
-
 Goal
 ----
 
@@ -14,8 +13,12 @@ Find the most dangerous intersections for cyclists in Los Angeles.
 Data Sources
 ------------
 
-Get circulation file (streets data)
-Get collision data from TIMS
+### Raw Data
+* Get circulation file (streets data)
+* Get collision data from TIMS
+
+### Derived Data
+* layers and qgis project file
 
 Process
 -------

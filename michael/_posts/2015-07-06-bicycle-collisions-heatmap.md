@@ -1,3 +1,9 @@
+---
+layout: post
+title: Cycling Collisions Heatmap in Los Angeles
+author: michaelkirk
+published: true
+---
 
 We wanted to find out where the most automobile/bicycle collisions were happening.
 
