@@ -1,14 +1,11 @@
 ---
 layout: post
-title: Dangerous Cycling Intersections in Los Angeles
+title: Dangerous Cycling Intersections
+subtitle: The most dangerous intersections for cyclists in Los Angeles.
 author: michaelkirk
 published: true
+image: bikes-in-front-of-union-station.jpg
 ---
-
-Goal
-----
-
-Rank the most dangerous intersections for cyclists in Los Angeles.
 
 Process
 -------

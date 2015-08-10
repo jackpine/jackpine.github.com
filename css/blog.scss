@@ -1,4 +1,10 @@
 ---
 ---
 
-@import "css/main.scss"
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+@import "/css/clean-blog.css";
+
+.intro-header {
+  background-color: #969696;
+  text-shadow: 0px 0px 2px #969696;
+}
