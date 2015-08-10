@@ -1,20 +1,12 @@
 ---
 ---
+
 $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap/_mixins.scss";
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap/_normalize.scss";
-
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap/_glyphicons.scss";
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap/_tooltip.scss";
+@import 'css/main.scss';
 
 @import "/fonts/caviar-dreams-fontfacekit/caviardreams_regular_macroman/stylesheet.css";
 @import "/fonts/caviar-dreams-fontfacekit/caviardreams_bold_macroman/stylesheet.css";
-
-$lighter_text: #EAEBEA;
-$light_text: #EDEDED;
-$grey_text: #767676;
 
 body, html {
   height: 100%;
