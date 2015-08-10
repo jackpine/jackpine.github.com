@@ -3,7 +3,14 @@
 
 $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
-@import 'css/main.scss';
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_mixins.scss";
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_normalize.scss";
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_glyphicons.scss";
+
+$lighter_text: #EAEBEA;
+$light_text: #EDEDED;
+$grey_text: #767676;
 
 @import "/fonts/caviar-dreams-fontfacekit/caviardreams_regular_macroman/stylesheet.css";
 @import "/fonts/caviar-dreams-fontfacekit/caviardreams_bold_macroman/stylesheet.css";
@@ -83,7 +90,7 @@ section {
 }
 
 #main {
-  background-image: url("../img/woodshop_background.jpg"), url("../img/woodshop_background_small.jpg");
+  background-image: url("../images/frontpage/woodshop_background.jpg"), url("../images/frontpage/woodshop_background_small.jpg");
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -173,7 +180,7 @@ section {
 }
 
 #the_guild {
-  background-image: url("../img/FLANNEL.jpg");
+  background-image: url("../images/frontpage/FLANNEL.jpg");
   @media (max-width: $screen-sm-min) {
     padding-bottom: 10px;
     .headshots li {
@@ -281,7 +288,7 @@ section {
     right: 0px;
     width: 229px;
     height: 400px;
-    background-image: url("../img/near_cone.png");
+    background-image: url("../images/frontpage/near_cone.png");
     background-size: contain;
     background-repeat: no-repeat;
     @media (max-width: $screen-sm-min) {
@@ -295,7 +302,7 @@ section {
     left: -39px;
     width: 193px;
     height: 261px;
-    background-image: url("../img/mid_cone.png");
+    background-image: url("../images/frontpage/mid_cone.png");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -306,7 +313,7 @@ section {
     left: 31%;
     width: 126px;
     height: 164px;
-    background-image: url("../img/far_cone.png");
+    background-image: url("../images/frontpage/far_cone.png");
     background-size: contain;
     background-repeat: no-repeat;
     @media (max-width: $screen-sm-min) {
