@@ -3,8 +3,20 @@ layout: blog
 title: Jackpine Blog
 ---
 
-<div id="post-listing" class="container">
-{% for post in site.posts %}
-  {% include post_wrapper.html url=post.url title=post.title content=post.excerpt author=post.author %}
-{% endfor %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {% for post in site.posts %}
+              {% include post_wrapper.html url=post.url title=post.title content=post.excerpt author=post.author date=post.date %}
+            {% endfor %}
+            {% comment %}
+            <!-- Pager -->
+            <ul class="pager">
+                <li class="next">
+                    <a href="#">Older Posts &rarr;</a>
+                </li>
+            </ul>
+            {% endcomment %}
+        </div>
+    </div>
 </div>
