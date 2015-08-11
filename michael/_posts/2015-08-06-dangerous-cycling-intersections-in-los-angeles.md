@@ -7,11 +7,10 @@ published: true
 image: bikes-in-front-of-union-station.jpg
 ---
 
-Process
--------
+## Process
 
 To find all the bicycle collisions that occured in each intersection in Los
-Angeles we needed to get the following:
+Angeles we need the following:
 
 1. Intersections in Los Angeles
 2. Bicycle collisions in Los Angeles
@@ -20,7 +19,7 @@ Angeles we needed to get the following:
 ### Intersections
 
 To get all the intersection in Los Angeles, we start with all the streets in
-the LA Planning Department's [Circulation file](#data-circulation). Using
+the LA Planning Department's [Circulation File](#data-circulation). Using
 QGIS's *Line Intersections* tool, we can turn the streets (a bunch of lines),
 into intersections (a bunch of points) (Go to *Menu:Vector > Analysis > Line
 Intersections*). You want to intersect the circulation layer with itself,
@@ -52,25 +51,26 @@ collisions within our intersection buffer layer. Inspect the attributes
 table for the new layer, sort by count, and *viola*. LA's most dangerous
 intersections.
 
-Data Sources
-------------
+###footnotes
 
-### <a name="data-circulation"></a> Circulation File
+**<a name="data-circulation"></a>\[Circulation File\]**
 
 From [Los Angeles Planning Department](http://cityplanning.lacity.org/)'s
 Circulation file (streets data). Go to "GIS Data".
 
 Here's the version we used in our analysis: [Circ.zip](https://collision-la.s3-uswest-1.amazonaws.com/data/2015-08-06-dangerous-cycling-intersections-in-los-angeles/Circ.zip)
 
-### <a name="data-tims"></a> TIMS SWITRS Collision Database
+**<a name="data-tims"></a>\[TIMS\]**
 
-From [TIMS](http://tims.berkeley.edu/), who geocodes all the collisions in the [SWITRS California collision database](http://iswitrs.chp.ca.gov/).
+[TIMS](http://tims.berkeley.edu/), from Berkeley, geocodes all the collisions
+in the [SWITRS California collision database](http://iswitrs.chp.ca.gov/) from
+California Highway Patrol.
 
 Here's the version we used in our analysis: [SWITRS_2003_2012_SHP.zip](https://collision-la.s3-uswest-1.amazonaws.com/data/2015-08-06-dangerous-cycling-intersections-in-los-angeles/SWITRS_2003_2012_SHP.zip)
 
-### Data we Produced
+**[Our layers]**
 
-You can download all of our layers and an example QGIS project file.
+You can download all of the layers we produced as ESRI compatible shapefiles, and an example QGIS project file.
 
 [intersections-2015-08-06.zip](https://collision-la.s3-uswest-1.amazonaws.com/data/2015-08-06-dangerous-cycling-intersections-in-los-angeles/intersections-2015-08-06.zip)
 
