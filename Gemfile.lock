@@ -5,7 +5,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     coderay (1.1.2)
     colorator (1.1.0)
-    ffi (1.9.18)
+    ffi (1.11.1)
     formatador (0.2.5)
     forwardable-extended (2.6.0)
     guard (2.14.1)
